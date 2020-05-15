@@ -5,27 +5,29 @@
   margin: 0 auto;
   cursor: pointer;
   position: relative;
-  margin-bottom: -4px;
+  margin-bottom: -8px;
 }
 
 .copy-button {
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.3);
+
   outline: none;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 .color-box:hover .copy-button {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .color-name {
@@ -33,8 +35,9 @@
   bottom: 0;
   left: 0;
   padding: 10px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .more-button {
@@ -47,9 +50,12 @@
   text-align: center;
   line-height: 30px;
   color: white;
-  font-size: 1rem;
+  font-size: 12px;
   border: none;
   cursor: pointer;
+  font-weight: 100;
+  font-family: "Poppins";
+  text-transform: uppercase;
 }
 
 .copy-overlay {
@@ -80,17 +86,17 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transform: scale(0.1);
+  transform: scale(1.5);
   z-index: -20;
   color: white;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .copy-msg.show {
   opacity: 1;
   transform: scale(1);
   z-index: 25;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.35s ease-in-out;
   transition-delay: 0.3s;
 }
 .copy-msg h1 {
@@ -99,6 +105,9 @@
   text-shadow: 1px 1.5px black;
   width: 100%;
   text-align: center;
-  padding: 1rem;
   text-transform: uppercase;
+}
+.copy-msg p {
+  font-weight: 200;
+  font-size: 2rem;
 }

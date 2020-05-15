@@ -12,7 +12,6 @@ class ColorBox extends Component {
   }
 
   changeCopiedState() {
-    console.log("hello");
     this.setState(
       {
         isCopied: true,
