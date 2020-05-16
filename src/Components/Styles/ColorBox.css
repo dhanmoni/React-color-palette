@@ -7,24 +7,36 @@
   position: relative;
   margin-bottom: -8px;
 }
+.color-box.go-back {
+  position: relative;
+  background-color: #000;
+}
 
-.copy-button {
+.single-color-palette .color-box {
+  height: 50%;
+}
+
+.copy-button,
+.back-button {
   width: 120px;
   height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   outline: none;
   text-align: center;
   line-height: 40px;
   color: white;
   font-size: 1.2rem;
-  opacity: 0;
   border: 2px solid white;
   border-radius: 5px;
+  text-decoration: none;
 }
+.copy-button {
+  opacity: 0;
+}
+
 .color-box:hover .copy-button {
   opacity: 1;
   transition: 0.1s;
@@ -53,7 +65,7 @@
   font-size: 12px;
   border: none;
   cursor: pointer;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Poppins";
   text-transform: uppercase;
 }
@@ -108,6 +120,13 @@
   text-transform: uppercase;
 }
 .copy-msg p {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
+}
+
+.color-box .light-text {
+  color: white;
+}
+.color-box .dark-text {
+  color: rgba(0, 0, 0, 0.7);
 }
