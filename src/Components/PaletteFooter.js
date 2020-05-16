@@ -1,4 +1,5 @@
 import React from "react";
+import "./Styles/Palette.css";
 
 function PaletteFooter(props) {
   const { paletteName, emoji } = props;

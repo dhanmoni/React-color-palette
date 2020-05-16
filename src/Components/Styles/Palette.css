@@ -1,4 +1,4 @@
-.palette {
+/* .palette {
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -6,7 +6,7 @@
 }
 .palette-colors {
   height: 88%;
-}
+} */
 .palette-footer {
   height: 5vh;
   background-color: white;

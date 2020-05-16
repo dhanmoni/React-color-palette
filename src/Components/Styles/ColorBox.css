@@ -1,4 +1,4 @@
-.color-box {
+/* .color-box {
   height: 25%;
   width: 20%;
   display: inline-block;
@@ -6,17 +6,17 @@
   cursor: pointer;
   position: relative;
   margin-bottom: -8px;
-}
-.color-box.go-back {
+} */
+/* .color-box.go-back {
   position: relative;
   background-color: #000;
-}
-
+} */
+/* 
 .single-color-palette .color-box {
   height: 50%;
-}
+} */
 
-.copy-button,
+/* .copy-button,
 .back-button {
   width: 120px;
   height: 40px;
@@ -32,16 +32,16 @@
   border: 2px solid white;
   border-radius: 5px;
   text-decoration: none;
-}
-.copy-button {
+} */
+/* .copy-button {
   opacity: 0;
 }
 
 .color-box:hover .copy-button {
   opacity: 1;
   transition: 0.1s;
-}
-
+} */
+/* 
 .color-name {
   position: absolute;
   bottom: 0;
@@ -50,8 +50,8 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 400;
-}
-
+} */
+/* 
 .more-button {
   position: absolute;
   right: 0;
@@ -68,8 +68,8 @@
   font-weight: 300;
   font-family: "Poppins";
   text-transform: uppercase;
-}
-
+} */
+/*
 .copy-overlay {
   opacity: 0;
   z-index: 0;
@@ -84,9 +84,9 @@
   position: absolute;
   opacity: 1;
   z-index: 10;
-}
+} */
 
-.copy-msg {
+/* .copy-msg {
   position: fixed;
   top: 0;
   left: 0;
@@ -102,16 +102,16 @@
   z-index: -20;
   color: white;
   flex-direction: column;
-  font-size: 4rem;
+  font-size: 4rem; 
 }
-.copy-msg.show {
+ .copy-msg.show {
   opacity: 1;
   transform: scale(1);
   z-index: 25;
   transition: all 0.35s ease-in-out;
   transition-delay: 0.3s;
-}
-.copy-msg h1 {
+} */
+/* .copy-msg h1 {
   background-color: rgba(255, 255, 255, 0.3);
   font-weight: 400;
   text-shadow: 1px 1.5px black;
@@ -122,11 +122,11 @@
 .copy-msg p {
   font-weight: 300;
   font-size: 2rem;
-}
-
+} */
+/* 
 .color-box .light-text {
   color: white;
 }
 .color-box .dark-text {
   color: rgba(0, 0, 0, 0.7);
-}
+} */
