@@ -16,56 +16,7 @@ import DraggableColorBoxList from "./DraggableColorBoxList";
 import arrayMove from "array-move";
 import NewPaletteFormNav from "./NewPaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
-
-const drawerWidth = 350;
-
-const styles = (theme) => ({
-  root: {
-    display: "flex",
-  },
-
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  drawerHeader: {
-    display: "flex",
-    alignItems: "center",
-    padding: "0 8px",
-    ...theme.mixins.toolbar,
-    justifyContent: "flex-end",
-  },
-  content: {
-    flexGrow: 1,
-    height: "calc(100vh - 64px)",
-    padding: theme.spacing.unit * 3,
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginLeft: -drawerWidth,
-  },
-  contentShift: {
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginLeft: 0,
-  },
-  drawerContainer: {
-    width: "90%",
-    display: "flex",
-    margin: "0 auto",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100%",
-  },
-  buttons: {},
-});
+import styles from "./JssStyles/NewPaletteFormStyles";
 
 class NewPaletteForm extends Component {
   static defaultProps = {
@@ -103,14 +54,12 @@ class NewPaletteForm extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit(newPaletteName) {
-    let newPalette = {
-      paletteName: newPaletteName,
-      id: newPaletteName.toLocaleLowerCase().replace(/ /g, "-"),
-      emoji: "✨",
-      colors: this.state.colors,
-    };
-    console.log(newPalette);
+  handleSubmit(newPalette) {
+    newPalette.id = newPalette.paletteName
+      .toLocaleLowerCase()
+      .replace(/ /g, "-");
+    newPalette.colors = this.state.colors;
+
     this.props.savePalette(newPalette);
     this.props.history.push("/");
   }

@@ -21,6 +21,7 @@ export default {
     alignItems: "center",
     "& a": {
       color: "white",
+      fontFamily: "Poppins",
     },
   },
   palettes: {
