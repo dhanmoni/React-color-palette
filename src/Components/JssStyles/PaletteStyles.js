@@ -20,9 +20,9 @@ export default {
     "& a": {
       color: "white",
       width: "120px",
-      height: "40px",
+      height: "50px",
       textAlign: "center",
-      lineHeight: "40px",
+      lineHeight: "50px",
       position: "absolute",
       top: "50%",
       left: "50%",
