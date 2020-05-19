@@ -41,7 +41,7 @@ export default {
     marginBottom: "-7px",
     overflow: "hidden",
   },
-  deleteIcon: {
+  deletePaletteIcon: {
     color: "white",
     backgroundColor: "#e01b5c",
     padding: "10px",

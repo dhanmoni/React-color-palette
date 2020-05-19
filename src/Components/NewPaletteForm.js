@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import classNames from "classnames";
+import arrayMove from "array-move";
+import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
+import { ChromePicker } from "react-color";
+
 import { withStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -9,11 +13,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-
-import { ChromePicker } from "react-color";
 import DraggableColorBoxList from "./DraggableColorBoxList";
-import arrayMove from "array-move";
 import NewPaletteFormNav from "./NewPaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 import styles from "./JssStyles/NewPaletteFormStyles";

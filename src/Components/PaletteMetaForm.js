@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -40,14 +39,13 @@ class PaletteMetaForm extends Component {
     this.props.handleSubmit(newPalette);
     this.setState({ formStage: "" });
   }
-  //() => handleSubmit(newPaletteName)
   handleInputChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
     const { newPaletteName, formStage } = this.state;
-    const { handleSubmit, hideMetaForm } = this.props;
+    const { hideMetaForm } = this.props;
     return (
       <div>
         <Dialog open={formStage === "emoji"} onClose={hideMetaForm}>
