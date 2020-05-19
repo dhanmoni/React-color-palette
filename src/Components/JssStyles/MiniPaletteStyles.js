@@ -1,3 +1,4 @@
+import sizes from "./Sizes";
 export default {
   root: {
     backgroundColor: "white",
@@ -40,7 +41,6 @@ export default {
     marginBottom: "-7px",
     overflow: "hidden",
   },
-  delete: {},
   deleteIcon: {
     color: "white",
     backgroundColor: "#e01b5c",
@@ -52,5 +52,9 @@ export default {
     opacity: 0,
     border: "2px solid white",
     borderRadius: "5px",
+    [sizes.down("sm")]: {
+      opacity: 1,
+      padding: "5px",
+    },
   },
 };

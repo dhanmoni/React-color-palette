@@ -101,7 +101,7 @@ export default {
     opacity: "1",
     zIndex: "10",
     [sizes.down("xs")]: {
-      transform: "scale(40)",
+      transform: "scale(50)",
     },
   },
   copyMsg: {

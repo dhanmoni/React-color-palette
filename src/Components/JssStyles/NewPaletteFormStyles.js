@@ -1,4 +1,5 @@
 import { DRAWER_WIDTH } from "../Constants/Constants";
+import sizes from "./Sizes";
 const drawerWidth = DRAWER_WIDTH;
 
 const styles = (theme) => ({
@@ -45,6 +46,10 @@ const styles = (theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+    [sizes.down("md")]: {
+      width: "90%",
+      height: "80%",
+    },
   },
   buttons: {},
 });
