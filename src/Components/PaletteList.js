@@ -68,10 +68,13 @@ class PaletteList extends Component {
             })}
           </TransitionGroup>
         </div>
-
+        {/* <div className={classes.attr}>
+          <span>Made with ♥ by Dhanmoni</span>
+        </div> */}
         <Dialog
           aria-labelledby="delete-confimation-dialog"
           open={openDeleteDialog}
+          className={classes.dialog}
         >
           <DialogTitle id="delete-confimation-dialog">
             Delete This Palette?

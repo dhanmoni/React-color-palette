@@ -44,12 +44,7 @@ const styles = (theme) => ({
       padding: 0,
     },
   },
-  headerText: {
-    [sizes.down("md")]: {
-      padding: 0,
-      marginLeft: 0,
-    },
-  },
+  headerText: {},
 });
 
 export default styles;

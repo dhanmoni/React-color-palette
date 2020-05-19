@@ -11,7 +11,7 @@ export default {
     },
   },
   root: {
-    height: "100vh",
+    height: "100%",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
@@ -36,7 +36,6 @@ export default {
     justifyContent: "space-between",
     color: "white",
     alignItems: "center",
-
     "& h1": {
       fontSize: "24px",
       marginLeft: "2%",
@@ -47,7 +46,6 @@ export default {
     },
     "& a": {
       color: "white",
-      fontFamily: "Poppins",
       fontSize: "16px",
       marginRight: "2%",
       [sizes.down("sm")]: {
@@ -72,4 +70,15 @@ export default {
       gridGap: "1%",
     },
   },
+  // attr: {
+  //   display: "flex",
+  //   width: "100%",
+  //   height: "60px",
+  //   position: "absolute",
+  //   right: "40px",
+  //   bottom: "20px",
+  //   alignItems: "center",
+  //   justifyContent: "flex-end",
+  //   backgroundColor: "green",
+  // },
 };

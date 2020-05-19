@@ -19,7 +19,6 @@ class MiniPalette extends PureComponent {
   }
   render() {
     const { classes, paletteName, emoji, colors } = this.props;
-    console.log("Rerendering", paletteName);
     const miniColorBoxes = colors.map((color) => {
       return (
         <div
@@ -35,7 +34,7 @@ class MiniPalette extends PureComponent {
           className={classes.deletePaletteIcon}
           style={{ transition: "all 0.3s ease-in-out" }}
           onClick={this.deletePalette}
-          fontSize="medium"
+          fontSize="default"
         />
         <div className={classes.colors}>{miniColorBoxes}</div>
         <div className={classes.title}>

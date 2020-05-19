@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import arrayMove from "array-move";
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import { ChromePicker } from "react-color";
 
 import { withStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -17,6 +15,7 @@ import DraggableColorBoxList from "./DraggableColorBoxList";
 import NewPaletteFormNav from "./NewPaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 import styles from "./JssStyles/NewPaletteFormStyles";
+import seedColors from "./SeedColors";
 
 class NewPaletteForm extends Component {
   static defaultProps = {
@@ -26,7 +25,7 @@ class NewPaletteForm extends Component {
     super(props);
     this.state = {
       open: true,
-      colors: this.props.palettes[0].colors,
+      colors: seedColors[0].colors,
     };
     this.addNewColor = this.addNewColor.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -76,8 +75,16 @@ class NewPaletteForm extends Component {
   }
   randomColor() {
     let allColors = this.props.palettes.map((p) => p.colors).flat();
-    let random = Math.floor(Math.random() * allColors.length);
-    let randomColor = allColors[random];
+    let random;
+    let randomColor;
+    let isDuplicateColor = true;
+    while (isDuplicateColor) {
+      random = Math.floor(Math.random() * allColors.length);
+      randomColor = allColors[random];
+      isDuplicateColor = this.state.colors.some(
+        (color) => color.name === randomColor.name
+      );
+    }
     this.setState({
       colors: [...this.state.colors, randomColor],
     });

@@ -84,7 +84,7 @@ export default {
     border: "none",
     cursor: "pointer",
     fontWeight: "300",
-    fontFamily: "Poppins",
+
     textTransform: "uppercase",
   },
   copyOverlay: {

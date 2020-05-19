@@ -72,7 +72,7 @@ class Navbar extends Component {
             </span>
           }
           ContentProps={{
-            "aria-describedly": "message-id",
+            "aria-describedby": "message-id",
           }}
           action={
             <IconButton
