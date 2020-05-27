@@ -7,7 +7,7 @@ export default {
     position: "relative",
     overflow: "hidden",
     cursor: "pointer",
-    "&:hover svg": {
+    "&:hover $delete": {
       opacity: 1,
     },
   },
@@ -41,8 +41,7 @@ export default {
     marginBottom: "-7px",
     overflow: "hidden",
   },
-  deletePaletteIcon: {
-    color: "white",
+  delete: {
     backgroundColor: "#e01b5c",
     padding: "10px",
     position: "absolute",
@@ -52,9 +51,13 @@ export default {
     opacity: 0,
     border: "2px solid white",
     borderRadius: "5px",
+    transition: "all 0.3s ease-in-out",
     [sizes.down("sm")]: {
-      opacity: 1,
       padding: "5px",
     },
+  },
+  deletePaletteIcon: {
+    color: "white",
+    fontSize: "24px",
   },
 };
