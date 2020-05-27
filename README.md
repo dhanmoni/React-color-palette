@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Color Palette
+
+This is a color palette app created with react.js by following Colt Steele's React course on Udemy.
+The app includes features like viewing a collection of premade color palettes, copying colors from them, adjusting lightness or darkness of the colors, and viewing different shadows of a particular color.
+User can also create his/her own custom color palette and save it.
+
+I learned a lot about react, react routing, animations and a bunch of other things by developing this application.
+
+## Installation
+
+Clone or download the repo to play around with it.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -65,4 +83,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
