@@ -8,7 +8,7 @@ I learned a lot about react, react routing, animations and a bunch of other thin
 
 ## Images
 
-### Resposive
+### Responsiveness
 ![](https://res.cloudinary.com/dmn19/image/upload/v1592759695/RCPThumbnail-min2-min.png)
 ### Home page
 ![](https://res.cloudinary.com/dmn19/image/upload/v1590919113/RCP1-min.png)
