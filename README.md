@@ -1,5 +1,10 @@
 # React Color Palette
 
+### View Live Application here:
+[https://react-color-palette.web.app](https://react-color-palette.web.app/)
+
+## About the app
+
 This is a color palette app created with react.js by following Colt Steele's React course on Udemy.
 The app includes features like viewing a collection of premade color palettes, copying colors from them, adjusting lightness or darkness of the colors, and viewing different shadows of a particular color.
 User can also create his/her own custom color palette and save it.
